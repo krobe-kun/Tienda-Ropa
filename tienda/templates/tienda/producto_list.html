@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            color: #fff;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ffddc1;
+        }
+        main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: 40px auto;
+        }
+        main h2 {
+            color: #ff6f61;
+            text-align: center;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        form input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button {
+            padding: 10px;
+            background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        form button:hover {
+            background: linear-gradient(135deg, #66a6ff 0%, #89f7fe 100%);
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(135deg, #89f7fe 0%, #66a6ff 100%);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tienda de Ropa</h1>
+</header>
+
+<div class="product-container">
+    <!-- Producto 1 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/200x200" alt="Camiseta">
+        <div class="product-info">
+            <h3>Camiseta Básica</h3>
+            <p class="price">Q120.00</p>
+            <button class="add-to-cart" onclick="addToCart('Camiseta Básica', 120)">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/200x200" alt="Pantalón">
+        <div class="product-info">
+            <h3>Pantalón Slim</h3>
+            <p class="price">Q250.00</p>
+            <button class="add-to-cart" onclick="addToCart('Pantalón Slim', 250)">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/200x200" alt="Zapatos">
+        <div class="product-info">
+            <h3>Zapatos Deportivos</h3>
+            <p class="price">Q400.00</p>
+            <button class="add-to-cart" onclick="addToCart('Zapatos Deportivos', 400)">Añadir al carrito</button>
+        </div>
+    </div>
+
+    <!-- Producto 4 -->
+    <div class="product-card">
+        <img src="https://via.placeholder.com/200x200" alt="Chaqueta">
+        <div class="product-info">
+            <h3>Chaqueta de Invierno</h3>
+            <p class="price">Q550.00</p>
+            <button class="add-to-cart" onclick="addToCart('Chaqueta de Invierno', 550)">Añadir al carrito</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addToCart(productName, productPrice) {
+        alert(`${productName} ha sido añadido al carrito por Q${productPrice}.`);
+    }
+</script>
+
+</body>
+</html>
